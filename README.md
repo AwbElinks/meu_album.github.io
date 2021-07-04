@@ -1,1 +1,1 @@
-http://meu_album.github.io
+https://awbelinks.github.io/meu_album.github.io/
