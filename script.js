@@ -8,3 +8,8 @@ function voltarCapa(){
   var voltar = document.querySelector(".card");
   voltar.style.left='0';
 }
+
+function rel_corp(){
+  var b = document.querySelector(".corpo");
+  b.style.position='relative';
+}
