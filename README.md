@@ -1,1 +1,1 @@
-# meu_album.github.io
+http://meu_album.github.io
