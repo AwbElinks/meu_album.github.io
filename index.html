@@ -1,315 +1,116 @@
-body{
-  margin: 0;
-  padding: 0;
-  background: blac;
-  font-family: sans-serif;
-}
-.video{
-  background: white;
-  width: 100vw;
-  height: 70vw;
-}
-.capa{
-  background: grey;
-  width: 90vw;
-  height: 80vh;
-  margin: 5vh auto;
-  border: solid 3px deepskyblue;
-  position: relative;
-}
-.img_capa{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-}
-.titulo_principal{
-  background-image: linear-gradient(to bottom right, deepskyblue, lightblue);
-  width: 100%;
-  height: 30vw;
-  text-align: center;
-  line-height: 25vw;
-  position: relative;
-  top: 55vw;
-  color: white;
-  font-size: 12vw;
-  font-weight: normal;
-  font-family: cursive;
-  font-weight: 900;
-  font-style: itali;
-}
-.titulo_secundario{
-  background: white;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  top: 38.5vw;
-  font-size: 5vw;
-  font-weight: 300;
-}
-.botao_album{
-  font-size: 0vw;
-  background-image: linear-gradient(to bottom right, deepskyblue, lightblue);
-  width: 10vw;
-  height: 10vw;
-  color: transparent;
-  text-align: center;
-  position: relative;
-  border-radius: 100%;
-  float: right;
-  right: 7vw;
-  top: 105vw;
-  box-shadow: 1px 1px 3px rgba(0,0,0,.5);
-  transition:  .5s;
-  z-index: 8;
-  animation-name: anima_botao;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-@keyframes anima_botao{
-  50%{
-    font-size: 0vw;
-    width: 10vw;
-    border-radius: 100vw;
-  }
-  60%{
-    color: white;
-    font-size: 5vw;
-    width: 60vw;
-    border-radius: 25vw;
-  }
-  70%{
-    color: white;
-    font-size: 5vw;
-    width: 60vw;
-    border-radius: 25vw;
-  }
-  80%{
-    color: white;
-    font-size: 5vw;
-    width: 60vw;
-    border-radius: 25vw;
-  }
-  90%{
-    color: transparent;
-    font-size: 0vw;
-    width: 10vw;
-    border-radius: 25vw
-  }
-  100%{
-    color: transparent;
-    font-size: 0vw;
-    width: 10vw;
-    border-radius: 100vw;
-  }
-}
-.p_botao{
-  line-height: vw;
-  text-align: center;
-  color: whit;
-  margin-top: 2vw;
-  font-size: vw;
-  letter-spacing: 1vw;
-}
-redes:hover{
-  background: white;
-  width: 60vw;
-  border-radius: 25vw;
-  transition: ;
-}
-.card{
-  background: black;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0vw;
-  left: 0;
-  transition: .5s;
-  z-index: 9;
-}
-.pagina{
-  background: black;
-  width: 100vw;
-  height: 200vw;
-  position: relative;
-  margin-top: -1vw;
-}
-#pagina1{
-  top: vw;
-}
-#pagina2{
-  background: white;
-  height: 135vw;
-}
-#pagina3{
-  height: 180vw;
-  padding-top: 15vw;
-}
-#pagina4{
-  background: white;
-  height: 150vw;
-}
-#img_pag4{
-  width: 97vw;
-  height: 146vw;
-  margin: 1.5vw;
-}
-#pagina5{
-  position: relative;
-  height: 190vw;
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Álbum</title>
+    <link rel="stylesheet" href="Index.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+  <div class="card">
+
+  <div class="botao_album" onclick="mostra_album()" onmouseout="rel_corp()">
+    <p class="p_botao">Ir para o álbum</p>
+    </div>
+
+  <section class="capa">
+    <img class="img_capa" src="Img/capa_casamento.jpg" alt="imagem de capa" />
+    <h1 class="titulo_principal">Elayne & Adriano</h1>
+    <h2 class="titulo_secundario">Lembranças do nosso casamento</h2>
+    
+  </section>
+  </div>
   
-}
-#pagina6{
-  background: white;
-  position: relative;
-  height: 140vw;
-  margin-bottom: 1vw;
-}
-.iframe_fotos{
-  background: re;
-  position: absolute;
-  left: 0;
-}
-.titulo_pagina{
-  position: absolute;
-  color: white;
-  width: 40vw;
-  padding: 0 4vw 2vw 0;
-  background: re;
-  right: 0vw;
-  top: 0vw;
-  font-size: 4.5vw;
-  font-family: 'roboto';
-  font-weight: 500;
-  z-index: 8;
-  border-bottom: solid .8vw deepskyblue;
-  text-align: right;
-}
-.botao_voltar{
-  color: white;
-  background: deepskyblue;
-  padding: 1vw;
-  top: 2.5vw;
-  position: fixed;
-  z-index: 8;
-}
-.texto{
-  background: transparent;
-  /*background-image: url(img/img_capa.jpg);
-  background-repeat: no-repeat;*/
-  width: 90vw;
-  height: 120vw;
-  margin: 15vw auto;
-  color: white;
-  text-align: center;
-  box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-}
-.p-texto{
-  background: rgba(0,0,0,.2);
-  width: 80vw;
-  height: 75%;
-  position: absolute;
-  left: 10vw;
-  top: 2vw;
-  border-radius: .5vw;
-  padding-top: 5vw;
-}
-#img_texto{
-  opacity: .8;
-}
-.mini_fotos{
-  background: gray;
-  width: 44vw;
-  height: 70vw;
-  margin: 1vw;
-  border: solid 1vw white;
-}
-.img_mini{
-  width: 100%;
-  height: 100%;
-}
-#mini1{
-  top: 10vw;
-  left: 2vw;
-  position: absolute;
-}
-#mini2{
-  position: relative;
-  left: 50vw;
-  top: 40vw;
-}
-#mini3{
-  width: 70vw;
-  height: 80vw;
-  margin: 35vw auto;
-}
-#mini4, #mini5, #mini6, #mini7{
-  float: left;
-  margin: 2vw;
-}
-#mini5{
-  margin-left: -3vw;
-  margin-top: 10vw;
-  transform: rotate(10deg);
-}
-#mini6{
-  position: absolute;
-  margin-left: 8vw;
-  margin-top: 85vw;
-  transform: rotate(-10deg);
-  z-index: 8;
-}
-#mini7{
-  margin-left: 52vw;
-  margin-top: 87vw;
-  position: absolute;
-}
-#mini8{
-  position: absolute;
-  top: 20vw;
-}
-#mini9{
-  position: absolute;
-  right: 0;
-  top: 30vw;
-}
-#mini10{
-  position: absolute;
-  width: 70vw;
-  height: 90vw;
-  top: 85vw;
-  left: 15vw;
-}
-.rodape{
-  background: black;
-  width: 100vw;
-  height: 30vw;
-  position: relative;
-}
-.copy{
-  background: re;
-  color: white;
-  width: 100vw;
-  height: ;
-  text-align: center;
-  font-size: 2.5vw;
-  position: absolute;
-  top: 25vw;
-}
-.prox_pag{
-  color: deepskyblue;
-  position: absolute;
-  right: 1vw;
-  text-decoration: none;
-  padding: 2vw;
-  font-weight: 500;
-}
-.link_copy{
-  color: white;
-  text-decoration: none;
-}
-.corpo{
-  background: re;
-  position: fixed;
-  width: 100vw;
-  height: 1120vw;
-}
+  <div class="corpo">
+    
+  <div class="video">
+    <video src="" height="100%" width="100%" preload="none" autoplay="autoplay"></video>
+  </div>
+  
+  <section class="pagina" id="pagina1">
+    
+    <h1 class="titulo_pagina">Elayne & Adriano</h1>
+    <buttom type="buttom" class="botao_voltar" onclick="voltarCapa()"><<</buttom>
+    <div class="mini_fotos" id="mini1">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+    <div class="mini_fotos" id="mini2">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+    <div class="mini_fotos" id="mini3">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+  </section>
+  
+  <section class="pagina" id="pagina2">
+    <div class="texto">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="img_texto"/>
+      <p class="p-texto">Texto falando sobre a história do casal...</p>
+    </div>
+  </section>
+  
+  <section class="pagina" id="pagina3">
+      <div class="mini_fotos" id="mini4">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+      <div class="mini_fotos" id="mini5">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+      </div>
+      <div class="mini_fotos" id="mini6">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+      <div class="mini_fotos" id="mini7">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+  </section>
+  
+  <section class="pagina" id="pagina4">
+    <img class="img_mini" src="img/capa.jpeg" alt="" id="img_pag4" />
+  </section>
+  
+  <section class="pagina" id="pagina5">
+    <div class="mini_fotos" id="mini8">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+    <div class="mini_fotos" id="mini9">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+    <div class="mini_fotos" id="mini10">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+  </section>
+  
+  <section class="pagina" id="pagina6">
+    <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    <iframe src="iframe_fotos.html" width="40%" height="100%" class="iframe_fotos"></iframe>
+    
+  </section>
+  
+  <footer class="rodape">
+    <a class="prox_pag" href="#">Próxima página >></a>
+    <div class="copy">
+     <a class="link_copy" href=" ">Produzido por AwbE links.</a>
+    </div>
+  </footer>
+
+</div>
+  <script type="text/javascript" charset="utf-8" src="Script.js">
+    
+  </script>
+  
+</body>
+
+</html>
