@@ -187,7 +187,7 @@ redes:hover{
 .botao_voltar{
   color: white;
   background: deepskyblue;
-  padding: 1vw;
+  padding: 2vw;
   top: 2.5vw;
   position: fixed;
   z-index: 8;
@@ -256,7 +256,7 @@ redes:hover{
   margin-left: 8vw;
   margin-top: 85vw;
   transform: rotate(-10deg);
-  z-index: 8;
+  z-index: 7;
 }
 #mini7{
   margin-left: 52vw;
