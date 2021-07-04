@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Meu Álbum</title>
+    <link rel="stylesheet" href="index.css" type="text/css" media="all" />
+</head>
+
+<body>
+
+  <div class="card">
+
+  <div class="botao_album" onclick="mostra_album()" onmouseout="rel_corp()">
+    <p class="p_botao">Ir para o álbum</p>
+    </div>
+
+  <section class="capa">
+    <img class="img_capa" src="Img/capa.jpeg" alt="imagem de capa" />
+    <h1 class="titulo_principal">Elayne & Adriano</h1>
+    <h2 class="titulo_secundario">Lembranças do nosso casamento</h2>
+    
+  </section>
+  </div>
+  
+  <div class="corpo">
+    
+  <div class="video">
+    <video src="" height="100%" width="100%" preload="none" autoplay="autoplay"></video>
+  </div>
+  
+  <section class="pagina" id="pagina1">
+    
+    <h1 class="titulo_pagina">Elayne & Adriano</h1>
+    <buttom type="buttom" class="botao_voltar" onclick="voltarCapa()"><<</buttom>
+    <div class="mini_fotos" id="mini1">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+    <div class="mini_fotos" id="mini2">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+    <div class="mini_fotos" id="mini3">
+      <img class="img_mini" src="img/capa.jpeg" alt="" />
+    </div>
+  </section>
+  
+  <section class="pagina" id="pagina2">
+    <div class="texto">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="img_texto"/>
+      <p class="p-texto">Texto falando sobre a história do casal...</p>
+    </div>
+  </section>
+  
+  <section class="pagina" id="pagina3">
+      <div class="mini_fotos" id="mini4">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+      <div class="mini_fotos" id="mini5">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+      </div>
+      <div class="mini_fotos" id="mini6">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+      <div class="mini_fotos" id="mini7">
+        <img class="img_mini" src="img/capa.jpeg" alt="" />
+   
+      </div>
+  </section>
+  
+  <section class="pagina" id="pagina4">
+    <img class="img_mini" src="img/capa.jpeg" alt="" id="img_pag4" />
+  </section>
+  
+  <section class="pagina" id="pagina5">
+    <div class="mini_fotos" id="mini8">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+    <div class="mini_fotos" id="mini9">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+    <div class="mini_fotos" id="mini10">
+      <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    </div>
+    
+  </section>
+  
+  <section class="pagina" id="pagina6">
+    <img class="img_mini" src="img/capa.jpeg" alt="" id="" />
+  
+    <iframe src="iframe_fotos.html" width="40%" height="100%" class="iframe_fotos"></iframe>
+    
+  </section>
+  
+  <footer class="rodape">
+    <a class="prox_pag" href="#">Próxima página >></a>
+    <div class="copy">
+     <a class="link_copy" href=" ">Produzido por AwbE links.</a>
+    </div>
+  </footer>
+
+</div>
+  <script type="text/javascript" charset="utf-8" src="script.js">
+    
+  </script>
+  
+</body>
+
+</html>
