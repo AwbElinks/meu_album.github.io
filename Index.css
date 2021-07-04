@@ -56,8 +56,8 @@ body{
   position: relative;
   border-radius: 100%;
   float: right;
-  right: 5vw;
-  top: 92vh;
+  right: 7vw;
+  top: 100vw;
   transition:  .5s;
   z-index: 8;
   animation-name: anima_botao;
