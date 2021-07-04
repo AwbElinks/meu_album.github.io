@@ -12,7 +12,7 @@ body{
 .capa{
   background: grey;
   width: 90vw;
-  height: 85vh;
+  height: 80vh;
   margin: 5vh auto;
   border: solid 3px deepskyblue;
   position: relative;
@@ -29,7 +29,7 @@ body{
   text-align: center;
   line-height: 25vw;
   position: relative;
-  top: 50vw;
+  top: 55vw;
   color: white;
   font-size: 12vw;
   font-weight: normal;
@@ -42,7 +42,7 @@ body{
   width: 100%;
   text-align: center;
   position: relative;
-  top: 33.5vw;
+  top: 38.5vw;
   font-size: 5vw;
   font-weight: 300;
 }
@@ -57,7 +57,7 @@ body{
   border-radius: 100%;
   float: right;
   right: 7vw;
-  top: 100vw;
+  top: 105vw;
   box-shadow: 1px 1px 3px rgba(0,0,0,.5);
   transition:  .5s;
   z-index: 8;
