@@ -13,3 +13,8 @@ function rel_corp(){
   var b = document.querySelector(".corpo");
   b.style.position='relative';
 }
+
+function zoomFoto(){
+  var zoom = document.querySelector(".corpo");
+  zoom.style.background='pink';
+}
